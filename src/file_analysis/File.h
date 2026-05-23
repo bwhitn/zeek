@@ -82,6 +82,16 @@ public:
     double GetLastActivityTime() const;
 
     /**
+     * @return number of bytes missed for this file.
+     */
+    uint64_t GetMissingBytes() const { return missing_bytes; }
+
+    /**
+     * @return number of bytes not delivered to stream analyzers for this file.
+     */
+    uint64_t GetOverflowBytes() const { return overflow_bytes; }
+
+    /**
      * Refreshes "last_active" field of #val record with current network time.
      */
     void UpdateLastActivityTime();

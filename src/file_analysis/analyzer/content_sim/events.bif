@@ -1,0 +1,11 @@
+## This event is generated each time file analysis generates a content
+## similarity value for the file contents.
+##
+## f: The file.
+##
+## alg: The content similarity algorithm identifier.
+##
+## content_sim: The content similarity value.
+##
+## .. zeek:see:: Files::add_analyzer Files::ANALYZER_CONTENT_SIM
+event file_content_sim%(f: fa_file, alg: string, content_sim: string%);

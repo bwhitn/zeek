@@ -956,6 +956,9 @@ set(_bifcl_exe_path "included")
 add_subdirectory(tools/gen-zam)
 
 add_subdirectory(tools/systemd-generator)
+set(SSDF_HIGHWAYHASH_ROOT "${PROJECT_SOURCE_DIR}/auxil/highwayhash")
+set(SSDF_BUILD_TESTS ${ENABLE_ZEEK_UNIT_TESTS})
+add_subdirectory(auxil/ssdf tools/ssdf)
 add_subdirectory(tools/zeek-cut)
 
 if (ENABLE_JEMALLOC)

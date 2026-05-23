@@ -70,3 +70,6 @@
 [submodule "auxil/zeek-packet-source-udp"]
 	path = auxil/zeek-packet-source-udp
 	url = https://github.com/zeek/zeek-packet-source-udp.git
+[submodule "auxil/ssdf"]
+	path = auxil/ssdf
+	url = https://github.com/bwhitn/ssdf
